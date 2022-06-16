@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+}
+
+.enter{
+    font-family: Big Shoulders Display;
+    color: black;
+}
+
+main{
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: Big Shoulders Display;
+    color: white;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 60px;
+    font-family: Lexend Deca;
+}
+
+button{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border-color: transparent;
+}
+
+.first{
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px 35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 400px;
+}
+
+.first button{
+    color: hsl(31, 77%, 52%);
+    font-family: Lexend Deca;
+}
+
+.second{
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px 35px;
+    height: 400px;
+
+}
+
+.second button{
+    color: hsl(184, 100%, 22%);
+    font-family: Lexend Deca;
+}
+
+.third{
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px 35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 400px;
+
+}
+
+.third button{
+    color: hsl(179, 100%, 13%);
+    font-family: Lexend Deca;
+}
+
+button:active{
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+/* To maintain the height of the cards */
+
+@media screen and (max-width: 980px) {
+   .height{
+       height: 500px;
+   }
+}
+
+@media screen and (max-width: 720px) {
+    .height{
+        height: 600px;
+    }
+}
+
+/* Original task answer */
+
+@media screen and (max-width: 375px) {
+    main{
+        display: block;
+    }
+
+    .first{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .third{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;  
+        height: auto;
+    }
+
+    .second{
+        height: auto;
+    }
+
+}
