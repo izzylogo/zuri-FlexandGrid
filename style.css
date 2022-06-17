@@ -10,6 +10,21 @@ body{
     font-size: 15px;
 }
 
+header{
+    text-align: center;
+}
+
+header a{
+    color: rgb(41, 38, 38);
+    text-decoration: none;
+    background-color: rgb(223, 240, 240);
+    padding: 5px 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(122, 120, 120);
+    transform: scale(3);
+}
+
+
 .enter{
     font-family: Big Shoulders Display;
     color: black;
